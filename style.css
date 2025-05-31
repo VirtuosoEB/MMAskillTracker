@@ -1,0 +1,15 @@
+body {
+    font-size: 15pt;
+    height: 100%;
+    overflow: hidden;
+    text-align: center ;
+}
+img {
+    width: 100%;
+}
+#categories{
+    border:solid;
+    height: 50px;
+    position: relative;
+    top: 410px;
+}
