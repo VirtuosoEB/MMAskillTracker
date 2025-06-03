@@ -1,15 +1,56 @@
 body {
-    font-size: 15pt;
-    height: 100%;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows:minmax( 90px, auto);
     overflow: hidden;
+}
+div {
     text-align: center ;
 }
-img {
-    width: 100%;
+#header{
+    grid-column-start: 1;
+    grid-column-end: span 5;
+}
+#bookmark{
+    grid-column-start: 1;
+}
+#level{
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-end: span 2 ;
 }
 #categories{
-    border:solid;
-    height: 50px;
+    grid-column: 1/6;
+    grid-row-end: span 3;
     position: relative;
-    top: 410px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+#circle {
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  border: solid;
+  
+  border-radius: 50%;
+  overflow: hidden;
+}
+button{
+    position: absolute;
+    top: 60%;
+    width: 1%;
+    left: 45%;
+}
+#arrow{
+    width: 15%;
+    position: absolute;
+    top: 60%;
+    left: 42.5%;
+}
+#circle, #arrow {
+  transition: top 0.3s ease;
 }
