@@ -1,6 +1,9 @@
 console.log('Hello World!');
-let state = 0
+
+//module importation
 import {moveCircle} from "/modules/circleMovement.js"
-import {journalLink} from "/modules/links.js"
+import {journalLink, tLink} from "/modules/links.js"
+let state = 0
 moveCircle()
 journalLink()
+tLink()
