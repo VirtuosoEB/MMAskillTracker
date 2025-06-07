@@ -1,3 +1,5 @@
+let state = 0
+
 export function moveCircle() {
   let circle = document.getElementById("circle");
   let arrow = document.getElementById("arrow");

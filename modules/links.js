@@ -4,3 +4,4 @@ export function journalLink(){
 export function tLink(){
   window.location.href = "/pages/techniques.html"
 }
+
