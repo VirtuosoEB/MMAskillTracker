@@ -2,4 +2,9 @@ body{
 }
 #insertion{
   background-color: #00EDFF;
+  text-align: center;
+}
+textarea{
+  width: 80%;
+  aspect-ratio: 1/2;
 }

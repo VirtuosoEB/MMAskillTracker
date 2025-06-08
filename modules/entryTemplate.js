@@ -45,3 +45,12 @@ export function notes(){
   insertion.appendChild(noteHeadings)
   insertion.appendChild(noteInput)
 }
+export function addEntryBtn(){
+  const entryBtn = document.createElement("button")
+  entryBtn.textContent = "Add Entry"
+  entryBtn.addEventListener("click", addEntry)
+  function addEntry() {
+    
+  }
+  
+}
