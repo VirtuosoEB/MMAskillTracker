@@ -1,22 +1,26 @@
 let entryForm = document.createElement("form")
   let insertion = document.getElementById("insertion")
-export function classInfo(){
-  let date = document.createElement("p");
-  date.textContent = "Date:";
   
-  let classType = document.createElement("p");
-  classType.textContent = "Class Type:";
-  
-  let duration = document.createElement("p");
-  duration.textContent = "Duration:";
-  
-  console.log("your doing something right")
+  //prepare inputs for creation of div
   let dateInput = document.createElement("input")
   dateInput.type = "text"
   let classTypeInput = document.createElement("input")
   classTypeInput.type = "text"
   let durationInput = document.createElement("input")
   durationInput.type = "text"
+  
+  //inserts the entry creator
+export function classInfo(){
+  
+  //input labels
+  let date = document.createElement("p");
+  date.textContent = "Date:";
+  let classType = document.createElement("p");
+  classType.textContent = "Class Type:";
+  let duration = document.createElement("p");
+  duration.textContent = "Duration:";
+  
+  console.log("your doing something right")
   
   insertion.appendChild(date);
   insertion.appendChild(dateInput);
@@ -25,6 +29,8 @@ export function classInfo(){
   insertion.appendChild(duration);
   insertion.appendChild(durationInput);
 }
+
+//adds cancel button 
 export function addCancelBtn() {
   let cancelBtn = document.createElement("button");
   cancelBtn.textContent = "cancel"
@@ -32,7 +38,7 @@ export function addCancelBtn() {
   insertion.appendChild(cancelBtn);
   console.log("button added")
 }
-
+//adds note box
 export function notes(){
   let noteHeadings = document.createElement("h2");
   noteHeadings.textContent = "Notes"
@@ -50,7 +56,11 @@ export function addEntryBtn(){
   entryBtn.textContent = "Add Entry"
   entryBtn.addEventListener("click", addEntry)
   function addEntry() {
-    
+    const entryDate = dateInput.value
+    const entryHeadings = document.createElement("h1")
+    entryHeadings.textContent = entryDate
+    const entries = document.getElementById("entries")
+    entries.appendChild(entryHeadings)
   }
-  
+  insertion.appendChild(entryBtn)
 }
