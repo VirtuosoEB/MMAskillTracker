@@ -6,18 +6,18 @@ import {journalLink, tLink} from "./modules/links.js"
 let state = 0 
 
 // grabbing images
-const striking = document.getElementById("striking")
-const grappling = document.getElementById("grappling")
-const tactics = document.getElementById("tactics")
-const submissions = document.getElementById("submissions")
-const defense = document.getElementById("defense")
+const striking = document.getElementById("Striking")
+const grappling = document.getElementById("Grappling")
+const tactics = document.getElementById("Tactics")
+const submissions = document.getElementById("Submissions")
+const defense = document.getElementById("Defense")
 
 
-striking.addEventListener("click", tLink)
-grappling.addEventListener("click", tLink)
-tactics.addEventListener("click", tLink)
-submissions.addEventListener("click", tLink)
-defense.addEventListener("click", tLink)
+striking.addEventListener("click", () => tLink(striking))
+grappling.addEventListener("click", () => tLink(grappling))
+tactics.addEventListener("click", () => tLink(tactics))
+submissions.addEventListener("click", () => tLink(submissions))
+defense.addEventListener("click", () => tLink(defense))
 
 //journal link
 const bookmark = document.getElementById("bookmark")
@@ -26,3 +26,4 @@ bookmark.addEventListener("click", journalLink)
 //circle movement
 const arrow = document.getElementById("arrow")
 arrow.addEventListener("click", () => moveCircle())
+

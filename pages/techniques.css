@@ -1,0 +1,9 @@
+body {
+  display:grid;
+  grid-template-columns: 2, 50%;
+}
+div{
+  border: solid;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+}
