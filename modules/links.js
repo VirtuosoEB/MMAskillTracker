@@ -8,3 +8,6 @@ export function tLink(x){
   window.location.href = "pages/techniques.html"
   sessionStorage.setItem("category", buttonId)
 }
+export function cardCreator(){
+  window.location.href = "/pages/cardCreator.html"
+}

@@ -2,8 +2,7 @@ body {
   display:grid;
   grid-template-columns: 2, 50%;
 }
-div{
+#mainDiv {
   border: solid;
-  grid-column-start: 2;
-  grid-column-end: span 1;
+  text-align: center;
 }
