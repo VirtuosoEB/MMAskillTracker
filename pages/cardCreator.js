@@ -15,18 +15,17 @@ if( category === "Striking"){
   image.src = "../Assets/defense.svg"
 }
 
-let cards = []
+let cards = JSON.parse(sessionStorage.getItem("cards")) || []
 
 function finished(param) {
   let tName = document.getElementById("tName").value
 let tNote = document.getElementById("tNotes").value
-
   let newCard = {
     name: tName,
     type: category,
     note: tNote, 
   };
-  cards.push(newCard);
+    cards.push(newCard);
   sessionStorage.setItem("cards", JSON.stringify(cards))
 }
 let finishBtn = document.getElementById("finishBtn")
