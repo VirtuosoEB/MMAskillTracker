@@ -1,6 +1,6 @@
 import {insert} from "./insert.js"
 import {getCategoryImg} from "././categoryImgLogic.js"
-
+let cards = JSON.parse(sessionStorage.getItem("cards"))
 export function convert(){
   for (let i = 0; i < cards.length; i ++){
   
