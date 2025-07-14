@@ -1,10 +1,10 @@
-
+import {getCategoryImg} from "/modules/categoryImgLogic.js"
 //gets card info
 let cardInfo = JSON.parse(sessionStorage.getItem("cardInfo"))
 
 // === Sets category image ===
 let image = document.getElementById("categoryImg")
-image.src = cardInfo.type
+image.src = getCategoryImg(cardInfo.type)
 let imageSrc = image.src
 // === sets card Name ===
 let name = document.getElementById("tName")
@@ -23,7 +23,7 @@ function finished(param) {
   let tNote = document.getElementById("tNotes").value
   let editedCard = {
     name: tName,
-    type: imageSrc,
+    type: cardInfo.type,
     note: tNote
   };
     for (let i = 0; i < cards.length; i++){

@@ -1,4 +1,4 @@
-
+import {sortCards} from '../modules/cardSorter.js';
 //checks category currently selected 
 let category = sessionStorage.getItem("category")
 console.log("cardCreator detected" + category )

@@ -8,6 +8,13 @@ export function insert(from, to){
   }
 }
 
+export function insertData(from, to) {
+  if (Array.isArray(from)) {
+    to.push(...from)
+  } else {
+    to.push(from)
+  }
+}
 
 export function removeElements(x){
   if (Array.isArray(x)){
