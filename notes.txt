@@ -1,3 +1,6 @@
 realized that html elements cannot be stored in session storage as is so it must be converted into strings
 
 added card Id to cards to make more accessible 
+
+started sorting feature:
+realised issue with how images are currently being formated (direct link vs clean tect) --> currently working on solution (referencing clean image format through id) view /modules/editCards.js 
