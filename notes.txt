@@ -1,0 +1,3 @@
+realized that html elements cannot be stored in session storage as is so it must be converted into strings
+
+added card Id to cards to make more accessible 

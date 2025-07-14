@@ -1,0 +1,1 @@
+let cardList = JSON.parse(localStorage("cards"))
