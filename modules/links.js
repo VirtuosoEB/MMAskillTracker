@@ -10,5 +10,5 @@ export function tLink(x){
 }
 export function cardCreator(){
   console.log("it should change page")
-  window.location.href = "cardCreator.html"
+  window.location.href = "../pages/cardCreator.html"
 }
