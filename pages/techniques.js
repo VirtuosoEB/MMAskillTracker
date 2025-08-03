@@ -2,7 +2,6 @@ import {cardCreator} from '../modules/links.js';
 import {convert} from '../modules/convert.js'
 import {detectChange} from '../modules/editCardList.js'
 import {editSelection} from '../modules/editCards.js'
-
 console.log("🚀 techniques.js script loaded");
 
 // sets technique category
@@ -14,7 +13,15 @@ console.log(sessionStorage.getItem("category"))
 let addTBtn = document.getElementById("addTBtn")
 addTBtn.addEventListener("click", cardCreator)
 
-convert()// displays card list
+// === display cards ===
+let cards = JSON.parse(localStorage.getItem("categoryList"))
+for (let i = 0; i<cards.length; i++){
+  let currentCategory = document.getElementById("category" + String(i+1))
+  convert(cards[i],currentCategory )
+}
+
+
+
 let selectionState = 0// dictates if viewing, editing or deleting cards 
 
 function handleClick(event) {

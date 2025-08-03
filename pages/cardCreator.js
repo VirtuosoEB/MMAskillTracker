@@ -36,6 +36,8 @@ function finished(param) {
       cards[i][cardId] = i
     }
   localStorage.setItem("cards", JSON.stringify(cards))
+  sortCards()
+  console.log("it's working 👍")
 }
 let finishBtn = document.getElementById("finishBtn")
 finishBtn.addEventListener("click", finished)
