@@ -1,4 +1,4 @@
-import {removeElements, insert, addNote} from "/modules/insert.js"
+import {removeElements, insert, addNote} from "../modules/insert.js"
 
 // Create container
 export const container = document.createElement("div");
